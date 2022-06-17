@@ -1,0 +1,151 @@
+@import url(./root-style.css);
+.work-section {
+  width: 100vw;
+  height: 100vh;
+  background: var(--sub-dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg);
+}
+.work-section .work-section__title {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+.work-section .work-section__title h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.work-section .work-section__project-panel {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.work-section .work-section__project-panel .project-panel__project {
+  transition: 0.4s ease;
+  position: relative;
+}
+.work-section .work-section__project-panel .project-panel__project .project__img {
+  width: 80%;
+  height: 18rem;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info {
+  position: fixed;
+  top: 12em;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--primary-dark);
+  transition: 1s ease;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__name {
+  position: absolute;
+  left: 50%;
+  top: 2.5em;
+  transition: 1s ease;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex: 1;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__project-img img {
+  width: 80%;
+  height: auto;
+  transition: 0s ease !important;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__about-project {
+  width: 60%;
+  margin: 2em auto;
+  font-size: 0.7em;
+  text-align: center;
+  transition: 1.5s ease;
+  position: relative;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4em;
+  transition: 0s ease !important;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__about-project .project-infor__badges {
+  margin-top: 3em;
+}
+.work-section .work-section__project-panel .project-panel__project .project-panel__project-info .project-info__about-project .project-infor__badges .badge {
+  font-size: 1em !important;
+}
+.work-section .work-section__project-panel .project-panel__project_desc {
+  font-size: 0.7rem;
+  width: 10em;
+  position: absolute;
+  left: 3em;
+  bottom: -8em;
+  margin-top: 1em;
+}
+.work-section .work-section__project-panel .project-panel__project_desc .project-desc__name {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.work-section .work-section__project-panel .project-panel__pagination {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.work-section .work-section__project-panel .project-panel__pagination span {
+  display: block;
+  font-size: 0.8rem;
+}
+.work-section .work-section__project-panel .project-panel__pagination .pagination__control .control__btn {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  margin: 0 2px;
+}
+.work-section .work-section__project-panel::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5px;
+  background: lightgrey;
+  margin: 1.5em auto;
+}
+.work-section .call-for-scroll {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.work-section .call-for-scroll span {
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=workSection.css.map */

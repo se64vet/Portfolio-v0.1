@@ -1,0 +1,83 @@
+@import url(./root-style.css);
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  z-index: 100;
+  width: 100vw;
+}
+.nav-bar .nav-bar__nav-hamburger {
+  color: var(--primary-light);
+  position: relative;
+  transition: 0.4s ease;
+  z-index: 101;
+  
+}
+.nav-bar .nav-bar__nav-content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.2);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-dark);
+  
+}
+.nav-bar .nav-bar__nav-content .nav-content__nav-list {
+  list-style: none;
+}
+.nav-bar .nav-bar__nav-content .nav-content__nav-list .nav-list__nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-bar .nav-bar__nav-content .nav-content__nav-list .nav-list__nav-link::after {
+  content: "";
+  width: 5em;
+  height: 3px;
+  background: var(--primary-light);
+  position: absolute;
+  transform: translate(-5em, -10px);
+  opacity: 0;
+}
+.nav-bar .nav-bar__nav-content .nav-content__nav-list .nav-list__nav-link:hover::after {
+  transform: translate(2.5em, -10px);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.nav-bar .nav-bar__nav-content .nav-content__nav-list .nav-list__nav-item {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav-bar .nav-bar__nav-logo {
+  border: 3px solid var(--primary-dark);
+  width: 3.5em;
+  height: 3.5em;
+  padding: 3px;
+  position: relative;
+}
+.nav-bar .nav-bar__nav-logo span {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=navBar.css.map */

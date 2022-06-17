@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+
+<!-- link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="assets/css/root-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" integrity="sha512-xbp9DExL/1FLDKhQIJNwoCaBjPytQcPMg82UsbBq02kckLcVzQms0+Ot54jXwuBjR6M91vaYHSmqrZlQ/nOEAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js" integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" referrerpolicy="no-referrer"></script>
+
+
+
+<title>Dante Mai</title>
+</head>
+
+<body>
+    <!-- ------------------------- -->
+    <!-- «  Navigation Bar »       -->
+    <!-- ------------------------- -->
+    <nav class="nav-bar container-fluid row gx-0">
+        <!-- hamburger Button -->
+        <div class="nav-bar__nav-hamburger col-3 col-lg-1">
+            <i class="nav-hamburger__icon fas fa-2x fa-bars hamburger-animation-counter"></i>
+        </div>
+
+        <!-- full screen Navigation Links -->
+        <div class="nav-bar__nav-content position-absolute ">
+            <ul class="nav-content__nav-list" id="myMenu">
+                <a href="#home" class="nav-list__nav-link">
+                    <li data-menuanchor="home" class="nav-list__nav-item">Home</li>
+                </a>
+                <a href="#work" class="nav-list__nav-link">
+                    <li data-menuanchor="work" class="nav-list__nav-item">Works</li>
+                </a>
+                <a href="#about" class="nav-list__nav-link">
+                    <li data-menuanchor="about" class="nav-list__nav-item">About</li>
+                </a>
+                <a href="#contact" class="nav-list__nav-link">
+                    <li data-menuanchor="contact" class="nav-list__nav-item">Contact</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Signature Logo -->
+        <div class="nav-bar__nav-logo col-3 col-lg-1">
+            <span class="nav-logo__text-dan color-dark">Dan</span>
+            <span class="nav-logo__text-te color-light">te.</span>
+        </div>
+    </nav>
+
+    <!-- ------------------------- -->
+    <!-- «     main Sections     » -->
+    <!-- ------------------------- -->
+    
+    <div id="pagepiling">
+
+        <!-- ------------------------- -->
+        <!-- «     Home Section      » -->
+        <!-- ------------------------- -->
+        <div id="home" class="section home-page container-fluid">
+            <!-- main content -->
+                    <!-- introduce texts -->
+            <div class="home-page__home-main row">
+                <div class="home-main__text-content col-12 col-md-11 col-lg-7 col-xl-6 order-sm-2 order-lg-0">
+                    <p class="text-content__tel-num">
+                        <span class="d-block color-dark" style="font-weight: bold;">
+                            +1 (865) <i class="fas fa-caret-down"></i>
+                        </span>
+                        <span class="d-block">
+                            3 four 7 nine 6 five 3
+                        </span>
+                    </p>
+                    <h1 class="text-content__name">
+                        <span class="color-dark">Dante</span>
+                        <span class="color-light">Mai</span>
+                    </h1>
+                    <h3 class="text-content__occupation">
+                        [Designer/ Deverloper]
+                    </h3>
+                    <p class="text-content__self-desc">
+                        A good designed websites brings happiness to 
+                        my customer and motivates me to be more creative
+                        and take good care of my products.
+                    </p>
+
+                </div>
+
+                    <!-- profile picture -->
+                <div class="home-main__img-content col-7 col-lg-4 d-none d-md-block">
+                    <div class="img-content__profile-pic">
+                        <img src="./assets/img/profile-pic.png" alt="profile picture" class="img-fluid profile-pic__home">
+                    </div>
+                </div>
+            </div>
+
+            <!-- side content -->
+            <div class="home-page__home-sub row text-center">
+                <p class="home-sub__quote">
+                    " Always be a better version than yesterday "
+                </p>
+                <ul class="home-sub__contact-links">
+                    <a href="#" class="contact-links__item">
+                        <li><span class="d-none d-md-inline-block">Facebook</span> <i class="d-md-none fab fa-facebook-square"></i> </li>
+                    </a>
+                    <a href="#" class="contact-links__item">
+                        <li><span class="d-none d-md-inline-block">Github</span> <i class="d-md-none fab fa-github-square"></i> </li>
+                    </a>
+                    <a href="#" class="contact-links__item">
+                        <li><span class="d-none d-md-inline-block">Tel</span> <i class="d-md-none fas fa-phone-square"></i> </li>
+                    </a>
+                    <a href="#" class="contact-links__item">
+                        <li><span class="d-none d-md-inline-block">Email</span> <i class="d-md-none fas fa-envelope"></i> </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ------------------------- -->
+        <!-- «     Works Section     » -->
+        <!-- ------------------------- -->
+        <div id="work" class="section work-section container-fluid">
+            <!-- Works Title -->
+            <div class="work-section__title row">
+                <h2 class="color-white">
+                    <span class="color-light">My</span> 
+                    Recent Works</h2>
+                    
+            </div>
+            
+            <!-- Works items -->
+            <div class="work-section__project-panel row ">
+                <div class="project-panel__project col-12 px-0">
+                    <img src="./assets/img/Works/all-blues-bar/title-img.jpg" alt="" class="img-fluid project__img">   
+                    
+                    <div class="project-panel__project-info colapse hidden">
+                        <h4 class="project-info__name ">All blues Bar
+                            <span style="background:lightcoral;" class="badge badge-pill color-dark">Study Case</span>
+                        </h4>
+
+                        
+
+                        <div class="project-info__project-img">
+                            <img src="./assets/img/Works/all-blues-bar/all-blues-menu.png" alt="" 
+                                class="project-img__item img-fluid">
+                            <img src="./assets/img/Works/all-blues-bar/all-blues-menu.png" alt="" 
+                                class="project-img__item img-fluid">
+                        </div>
+                        
+                        <div class="project-info__about-project">
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Obcaecati dolorem id doloribus provident! 
+                            Nihil similique alias quisquam ad magnam minima 
+                            enim distinctio? Distinctio vitae amet veritatis 
+                            totam molestiae? Perferendis laboriosam odio 
+                            possimus impedit blanditiis. Quam error magni 
+                            saepe obcaecati culpa.<br/><br>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Obcaecati dolorem id doloribus provident! 
+                            Nihil similique alias quisquam ad magnam minima 
+                            enim distinctio? Distinctio vitae amet veritatis 
+                            totam molestiae? Perferendis laboriosam odio 
+                            possimus impedit blanditiis. Quam error magni 
+                            saepe obcaecati culpa.
+
+                            <div class="project-infor__badges">
+                                <span style="background-color: lightgreen;" class="badge badge-pill  mx-auto mb-5">JSON</span>
+                                <span style="background-color: darkred;"class="badge badge-pill mx-auto mb-5">HTML</span>
+                                <span style="background-color: darkgoldenrod;"class="badge badge-pill mx-auto mb-5">Vanilla JS</span>
+                                <span style="background-color: skyblue;"class="badge badge-pill mx-auto mb-5">CSS</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="project-panel__project_desc">
+                        <span class="project-desc__name">All blues Bar</span>
+                        <p class="project-desc_desc">Design / Code Unsing 
+                            XD, Vanilla JS...</p>
+                    </div>
+                </div>  
+
+                <div class="project-panel__pagination col-12">
+                    <span>Click picture for details</span>
+                    <div class="pagination__control">
+                        <!-- paging Btns go here -->
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="call-for-scroll d-none d-lg-flex">
+                <span class="color-white">Scroll for more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14.231" height="25.802" viewBox="0 0 14.231 25.802">
+                    <path id="Path_2" data-name="Path 2" d="M930.447,1055.121c12.877,11.871,11.267,10.462,11.267,10.462l11.066-10.462" transform="translate(-1002.324 1008.71) rotate(-93)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  </svg>
+                  
+                  
+                  
+            </div>
+            
+        </div>
+
+        <!-- ------------------------- -->
+        <!-- «     About me Section  » -->
+        <!-- ------------------------- -->
+        <div id="about" class="section about-section container-fluid">
+            <div class="about-section__wrap row">
+
+
+                <div class="about-section__title col-12 col-lg-4">
+                    <h2 class="title__text">
+                        <span class="text__about">About</span>
+                        <span class="text__slash"> </span>
+                        <span class="text__me">.Me</span>
+                    </h2>
+                    <div class="title__img">
+                        <img class="img-fluid" src="./assets/img/about-me.jpg" alt="about-me">
+                    </div>
+
+                </div>
+
+
+                <div class="about-section__desc col-10 col-lg-4">
+                    <p class="desc__text">
+                        I am a self-taught Designer/Front-end Developer from TN, USA with desire to be a full-stack developer.
+                        I will turn your ideas into a design, make it live with some code and push it online for everyone.
+                        <br><br>
+                        I used to work as a freelancer for various digital jobs.
+                        That help me alot to learn about different interesting things. 
+                        <br><br>
+                        Out of the office you can see me as a funny person, who want to explore every corner in the street.
+                    </p>
+                    <div class="desc__btns">
+                        <a href="#" class="btns__myCV">
+                            See My CV
+                            
+                            <i class="mx-2 fas fa-copy d-none d-md-inline"></i>
+                        </a>
+                        <a href="#" class="btns__contact-me d-none d-md-block">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="about-section__img col-lg-4 d-none d-md-block">
+                    <img src="./assets/img/greatwave.png" alt="great-wave" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------- -->
+        <!-- «     Contact Section   » -->
+        <!-- ------------------------- -->
+        <div id="contact"  class="section contact-section container-fluid">
+            
+            <!-- contact main form -->
+            <div class="contact-section__form-wrapper row">
+                <form action="#" class="contact-form col-11 col-lg-5 ">
+                    <!-- FORM TITLE -->
+                    <h2 class="contact-form__title">
+                        Let's <span class="color-light">Talk</span> , 
+                        or <span class="color-light"> Chat </span> , or...</h2>
+                    
+                    <!-- MAIN FORM -->
+                    <div class="contact-form__guest-input">
+                            
+                        <!-- name -->
+                        <div class="guest-input__name">
+                            <input name="first-name" type="text" placeholder="First name">
+                            <input name="last-name" type="text" placeholder="Last Name">
+                        </div>
+                            
+                        <!-- email -->
+                        <input class="guest-input__email" type="email" name="email" id="guest-email" placeholder="yourEmail@gmail.com">
+                            
+                        <!-- message -->
+                        <textarea class="guest-input__message" name="message" id="guest-msg" cols="20" rows="6" placeholder="Type something here"></textarea>
+                            
+                        <!-- send button -->
+                        <div class="guest-input__submit text-center">
+                            <button class="guest-input__submit" type="submit">
+                                <i class="fas fa-paper-plane color-white"></i>
+                            </button>
+                            <label for="submit" class="color-light">SEND</label>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+            <!-- contact absolute image -->
+            <div class="contact-section__avatar">
+                <img src="./assets/img/avatar-hi.png" alt="avatar hi" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>

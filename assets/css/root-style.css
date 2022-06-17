@@ -1,0 +1,42 @@
+@import url(./utilities.css);
+@import url(./navBar.css);
+@import url(./homePage.css);
+@import url(./workSection.css);
+@import url(./aboutMe.css);
+@import url(./contact.css);
+
+
+:root{
+    --primary-dark: #242424;
+    --primary-light: #EF9621;
+    --sub-light-bold:#ff6005;
+    --sub-light:#F1B566;
+    --sub-dark-gray:#403E3C;
+    --sub-gray:#828281;
+    --sub-light-gray:#857E77;
+    --background-light:#FFFCF6;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: var(--background-light);
+    font-size: calc(0.75em + 1vmin);
+    
+}
+
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1920px) {
+    html{
+        font-size: 22px;
+    }
+}

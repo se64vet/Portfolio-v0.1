@@ -1,0 +1,172 @@
+@import url(./root-style.css);
+.work-section{
+    width: 100vw;
+    height: 100vh;
+    background:var(--sub-dark-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+
+    .work-section__title{
+        margin-top: 5em;
+        margin-bottom: 5em;
+        text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+    }
+    .work-section__project-panel{
+        width: 100%; // compete to row
+        position: relative;
+        color: white;
+        
+        text-align: center;
+        .project-panel__project{
+            transition: .4s ease;
+            position: relative;
+
+            .project__img{
+                width: 80%;
+                height: 18rem;
+                object-fit: cover; 
+                -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+                transition: .4s ease;
+
+                position: relative;
+                z-index: 1;
+            }
+
+            // hidden info panel
+            .project-panel__project-info{
+                position: fixed;
+                top: 12em;
+                left: 0;
+                z-index: 0;
+                width: 100vw;
+                height: 80vh;
+                display: flex;
+                gap: 2em;
+                justify-content: space-around;
+                align-items: center;
+                background: var(--primary-dark);
+
+                transition: 1s ease;
+                
+                .project-info__name{
+                    position: absolute;
+                    left: 50%;
+                    top: 2.5em;
+                    transition: 1s ease;
+                }
+                .project-info__project-img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2em;
+                    flex: 1;
+                    img{
+                        width: 80%;
+                        height: auto;
+                        transition: 0s ease !important;
+                    }
+                }
+                .project-info__about-project{
+                    width: 60%;
+                    margin: 2em auto;
+                    font-size: .7em;
+                    text-align: center;
+                    transition: 1.5s ease;
+                    position: relative;
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 4em;
+                    transition: 0s ease !important;
+                    
+                    .project-infor__badges{
+                        margin-top: 3em;
+                        .badge{
+                            font-size: 1em !important;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        
+
+        .project-panel__project_desc{
+            font-size: .7rem;
+            width: 10em;
+            position: absolute;
+            left: 3em;
+            bottom: -8em;
+            margin-top: 1em;
+            
+            .project-desc__name{
+                display: block;
+                font-size: .8rem;
+                font-weight: bold;
+            }
+        }
+        .project-panel__pagination{
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            
+            span{
+                display: block;
+                font-size: .8rem;
+            }
+
+            .pagination__control{
+                
+                .control__btn{
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    border: none;
+                    background: white;
+                    margin: 0 2px;
+                }
+            }
+        }
+        
+
+        &::after{
+            content: "";
+            display: block;
+            width: 30%;
+            height: 0.5px;
+            background: lightgrey;
+            margin: 1.5em auto;
+        }
+    }
+    .call-for-scroll{
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        span{
+            font-size: .8rem;
+            display: inline-block;
+        }
+    }
+    
+}
